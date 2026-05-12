@@ -1,0 +1,157 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(180deg, #ff6b35, #ff4d00);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: white;
+}
+
+/* CONTENEDOR */
+
+.contenedor{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.numero{
+    background: white;
+    color: #ff5a1f;
+    padding: 8px 14px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.titulo h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.titulo p{
+    font-size: 18px;
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: #ffffff;
+    color: #333;
+    width: 450px;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* FORMULARIO */
+
+.formulario h2,
+.resultado-card h2{
+    color: #ff5a1f;
+    margin-bottom: 10px;
+}
+
+.formulario p{
+    margin-bottom: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input{
+    padding: 15px;
+    border: 2px solid #e5e5e5;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus{
+    border-color: #ff5a1f;
+}
+
+button{
+    margin-top: 25px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff6b35, #ff4d00);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    transform: scale(1.03);
+}
+
+/* RESULTADO */
+
+.resultado{
+    background: #fff4ef;
+    min-height: 120px;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.info-js{
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.info-js h3{
+    color: #ff5a1f;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 900px){
+
+    .titulo h1{
+        font-size: 38px;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+  }
