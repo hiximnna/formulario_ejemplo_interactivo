@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Interactivo</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <main class="contenedor">
+
+        <section class="titulo">
+            <span class="numero">05</span>
+            <h1>Ejemplo interactivo</h1>
+            <p>
+                El usuario ingresa su nombre y edad.
+                JavaScript valida y muestra el resultado.
+            </p>
+        </section>
+
+        <section class="cards">
+
+            <!-- FORMULARIO -->
+            <div class="card formulario">
+                <h2>Formulario básico</h2>
+                <p>Completa los campos y presiona el botón.</p>
+
+                <form id="formulario">
+
+                    <label for="nombre">Nombre:</label>
+                    <input 
+                        type="text" 
+                        id="nombre"
+                        placeholder="Escribe tu nombre"
+                    >
+
+                    <label for="edad">Edad:</label>
+                    <input 
+                        type="number"
+                        id="edad"
+                        placeholder="Escribe tu edad"
+                    >
+
+                    <button type="button" onclick="mostrarDatos()">
+                        Mostrar datos
+                    </button>
+
+                </form>
+            </div>
+
+            <!-- RESULTADO -->
+            <div class="card resultado-card">
+
+                <h2>Resultado</h2>
+
+                <div id="resultado" class="resultado">
+                    Aquí aparecerá la información capturada.
+                </div>
+
+                <div class="info-js">
+                    <h3>¿Qué hace JavaScript?</h3>
+
+                    <p>
+                        Toma el valor de los campos con
+                        <strong>getElementById</strong>
+                        y lo muestra dentro del elemento resultado.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
