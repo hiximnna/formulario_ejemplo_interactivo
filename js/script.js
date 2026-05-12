@@ -1,21 +1,20 @@
 function mostrarDatos(){
 
-    // OBTENER VALORES
+    // OBTENER DATOS
     let nombre = document.getElementById("nombre").value;
     let edad = document.getElementById("edad").value;
 
-    // VALIDAR CAMPOS
+    // VALIDAR
     if(nombre === "" || edad === ""){
 
         document.getElementById("resultado").innerHTML =
-        "⚠️ Por favor completa todos los campos.";
+        "⚠️ Completa todos los campos.";
 
         return;
     }
 
-    // MOSTRAR RESULTADO
-    document.getElementById("resultado").innerHTML = `
-        <strong>Nombre:</strong> ${nombre} <br>
-        <strong>Edad:</strong> ${edad} años
-    `;
+    // MOSTRAR DATOS
+    document.getElementById("resultado").innerHTML =
+    "<strong>Nombre:</strong> " + nombre +
+    "<br><strong>Edad:</strong> " + edad + " años";
 }
