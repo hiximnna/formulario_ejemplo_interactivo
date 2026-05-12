@@ -1,10 +1,10 @@
 function mostrarDatos(){
 
-    // OBTENER DATOS
+    // OBTENER VALORES
     let nombre = document.getElementById("nombre").value;
     let edad = document.getElementById("edad").value;
 
-    // VALIDAR
+    // VALIDAR CAMPOS
     if(nombre === "" || edad === ""){
 
         document.getElementById("resultado").innerHTML =
